@@ -26,7 +26,7 @@ public class Estoque {
 
     public Produto buscarProduto(String nome) {
         for (Produto produto : produtos) {
-            if (produto.getNome().equalsIgnoreCase(nome)) {
+            if (produto.getNome().equals(nome)) {
                 return produto;
             }
         }
